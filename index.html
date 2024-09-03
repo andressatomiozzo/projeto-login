@@ -17,17 +17,19 @@
             <div id="texto">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="cadastro.php" method="post">
+                <form action="cadastro.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <label for="imail"><span class="material-symbols-outlined">login</span></label>
-                        <input type="email" name="mail" id="imail">
+                        <span class="material-symbols-outlined">login</span>
+                        <input type="email" name="mail" id="imail" placeholder="seu e-mail" autocapitalize="e-mail" required minlength="5" maxlength="30">
+                        <label for="imail">Login</label>
                     </div>
                     <div class="campo">
-                        <label for="isenha"><span class="material-symbols-outlined">password</span></label>
-                        <input type="password" name="senha" id="isenha">
+                        <span class="material-symbols-outlined">password</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocapitalize="current-password" required minlength="8" maxlength="18">
+                        <label for="isenha">Senha</label>
                     </div>
-                    <input type="submit" value="Enviar">
-                    <a href="#">Esqueci minha senha</a>
+                    <input type="submit" value="Entrar">
+                    <a href="#" class="botao">Esqueci minha senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>

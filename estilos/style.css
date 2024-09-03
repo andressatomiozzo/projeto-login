@@ -69,6 +69,10 @@ section p{
     font-size: 0.8rem;
 }
 
+form label {
+    display: none;
+}
+
 form div.campo {
     background-color: var(--cor02);
     border-radius: 5px;
@@ -78,21 +82,27 @@ form div.campo {
     height: 40px;
 }
 
-form label {
-    display: none;
-}
-
-form span {
-    height: 100%;
+div.campo > span {
+    color: white;
+    font-size: 2em;
     width: 40px;
-    font-size: 5rem;
+    padding: 5px;
 }
 
-div.campo input{
-    background-color: var(--cor01);
+
+div.campo > input{
+    background-color: #60b8b5;
     height: 100%;
     width: calc(100% - 45px);
     padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type= submit] {

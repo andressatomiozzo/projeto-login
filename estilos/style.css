@@ -25,16 +25,15 @@ body, html {
 }
 
 main{
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
@@ -52,7 +51,6 @@ section div#imagem {
     background: var(--cor02) url(../imagens/pattern.jpg) no-repeat;
     background-size: cover;
     height: 200px;
-    border-radius: 20px 20px 0 0;
 }
 
 section div#texto {
